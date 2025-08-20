@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+
+<head>
+
+<html lang="en">
+
+<meta charset="UTF-8">
+
+<title>Website Feedback Form</title>
+
+</head>
+
+
+
+<body>
+
+<!--Your HTML tags will start here-->
+
+<style>
+  body {background:rgb(95, 95, 95);color:#ffffff;font-family: Arial, Helvetica, sans-serif;margin: top 10xp;}
+    a {margin-left: 30px;}
+    nav {margin-right: 20px; }
+    nav a {margin-right: 15px;}
+    .wrap {margin: 20px;max-width: 400px;}
+    h1 {margin: 0 0 16px;font-size: 28px;}
+    label {display:block; margin:10px 0 6px; }
+    input [type="text"], 
+    select {width: 185px;padding: 6px;border: 1px solid rgb(255, 255, 255);background:rgb(255, 255, 255);color:rgb(0, 0, 0);}
+    fieldset {margin-top: 16px;border: 1px solid rgb(255, 255, 255);padding: 10px 12px 12px;color:rgb(255, 255, 255);max-width: 400px;}
+    legend {padding: 0 8px; }
+    textarea {margin-top: 16px;width: 100%;height: 170px;padding: 10px;border: 1px solid rgb(255, 255, 255);
+            border-radius: 4px;background: rgb(255, 238, 0);color:rgb(0, 0, 0);}
+    textarea::placeholder { color:rgb(0, 0, 0); }
+    .btns {margin-top: 10px; gap:12px;}
+    button {padding: 6px 14px; border: 2px solid #1a1a1a; border-radius: 4px; cursor:pointer;}
+    .btn-submit {background:rgb(255, 255, 255); color:#000; }
+    .btn-reset {background:rgb(255, 255, 255); color:#000; }
+    footer {margin-top:30px; margin-left: 30px; margin-bottom:30px}
+  </style>
+
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="table.html">Projects Table</a>
+    <a href="form.html">Website Feedback Form</a>
+    <a href="https://globe.adsbexchange.com/" target="_blank">Try ADSB Exchange</a>
+  </nav>
+
+  <div class="wrap">
+    <h1>User Feedback Form</h1>
+
+    <form action="#">
+      <label for="fname">First Name:</label>
+      <input id="fname" name="fname" type="text" required>
+
+      <label for="lname">Last Name:</label>
+      <input id="lname" name="lname" type="text" required>
+
+      <label for="lang">How would you describe my website?</label>
+      <select id="lang" name="lang">
+        <option>Awesome</option>
+        <option>Good</option>
+        <option>Fine</option>
+        <option>Bad</option>
+        <option>Other (COMMENT)</option>
+      </select>
+
+      <fieldset>
+        <legend>What could I improve?</legend>
+        <label><input type="radio" name="exp" value="0-2" required>Visuals</label>
+        <label><input type="radio" name="exp" value="3-5">Layout</label>
+        <label><input type="radio" name="exp" value="6-10">Functionality</label>
+        <label><input type="radio" name="exp" value="10+">"Code flow"</label>
+      </fieldset>
+
+      <textarea id="comments" name="comments" placeholder=">How would you describe my website?<"></textarea>
+
+      <div class="btns">
+        <button type="submit" class="btn-submit">Submit</button>
+        <button type="reset" class="btn-reset">Reset</button>
+      </div>
+    </form>
+  </div>
+  <footer>
+    Copyright &copy;2025
+    <a href="mailto:pricej1719@students.ftcc.edu?subject=Web%20Contact%20Button">Send me an Email</a>
+  </footer>
+<!--Your HTML tags will end here-->
+</body>
+</html>
